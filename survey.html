@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Sondage : Evaluation de Loblaws.ca</title>
+    </head>
+    <body>
+    <header>
+        <h1>Sondage : Evaluation de Loblaws.ca</h1>
+    </header>
+    <section class="content">
+    <div class="intro">
+        <p>J'ai choisi le site web de <a href="https://www.loblaws.ca/">Loblaws</a> pour que vous l'evaluer. Le site permet au utilisateurs de faire leurs courses en ligne.</p><br/>
+        <img src="screenshot.png" alt="Mon tableau de bord Habitica" title="Mon tableau de bord Habitica !" class="screenshot" />
+    </div>
+
+        <form>
+            <div class="question">
+                <p class="enonc">Avez-vous déjà visité ce site Web?</p>
+                <input type="radio" name="todo" value="Oui" id="oui" /><label for="souvent">Oui</label><br/>
+                <input type="radio" name="todo" value="Non" id="non" /><label for="parfois">Non</label>
+                <br/>
+            </div>
+
+            <div class="question">
+                <p class="enonc">La quantité d'informations sur chaque produit est :</p>
+                <input type="radio" name="dashboard" value="trop_grande" id="trop_grande"/><label for="trop_grande">Trop</label><br/>
+                <input type="radio" name="dashboard" value="grande" id="grande"/><label for="grande">Parfait</label><br/>
+                <input type="radio" name="dashboard" value="raisonnable" id="raisonnable"/><label for="raisonnable">Raisonnable</label><br/>
+                <input type="radio" name="dashboard" value="legere" id="legere"/><label for="legere">Légère</label><br/>
+                <input type="radio" name="dashboard" value="trop_legere" id="trop_legere"/><label for="trop_legere">Trop légère</label><br/>
+            </div>
+
+            <div class="question">
+                <p class="enonc">L'utilisation du site web vous semble intuitive :</p>
+                <input type="radio" name="usage" value="dacodac" id="dacodac"/><label for="dacodac">Tout à fait d'accord</label><br/>
+                <input type="radio" name="usage" value="dac" id="dac"/><label for="dac">Plutôt d'accord</label><br/>
+                <input type="radio" name="usage" value="neutre" id="neutre"/><label for="neutre">Neutre</label><br/>
+                <input type="radio" name="usage" value="desac" id="desac"/><label for="desac">Pas vraiment</label><br/>
+                <input type="radio" name="usage" value="dutout" id="dutout"/><label for="dutout">Pas du tout d'accord</label><br/>
+            </div>
+
+            <div class="question">
+                <p class="enonc">Choisissez chaque caractéristique satisfaite par ce site Web:</p>
+                <input type="checkbox" name="correct" id="correct"/><label for="agreable">Fonctionnement correct</label><br/>
+                <input type="checkbox" name="coherence" id="coherence"/><label for="clair">Cohérence</label><br/>
+                <input type="checkbox" name="efficacite" id="efficacite"/><label for="onglets">Efficacité</label><br/>
+                <input type="checkbox" name="fiabilite" id="fiabilite"/><label for="ajouter">Fiabilité</label><br/>
+                <input type="checkbox" name="securite" id="securite"/><label for="edit">Sécurité et intégrité des données</label><br/>
+                <input type="checkbox" name="utilisabilite" id="utilisabilite"/><label for="couleurs">Utilisabilité</label><br/>
+            </div>
+
+            <div class="question">
+                    <label for="descr" class="enonc">Quelle épicerie visitez-vous le plus souvent ?</label><br/>
+                    <input name="descr" id="ameliorer" class="zonetxt"></textarea>
+            </div>
+
+            <div class="question">
+                    <label for="ameliorer" class="enonc">Comment pensez vous qu'on puisse améliorer l'interface ?</label><br/>
+                    <textarea name="ameliorer" id="ameliorer" class="zonetxt"></textarea>
+            </div>
+
+                <input type="submit" value="Soumettre" class="question" />
+        </form>
+    </section>
+
+    <footer>
+        <p>Site web conçu par Mackie</p>
+    </footer>
+
+    </body>
+</html>

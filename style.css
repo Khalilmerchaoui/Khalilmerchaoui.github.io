@@ -1,0 +1,91 @@
+body
+{
+    background-color: #c6d1d8;
+    color: #3A3335;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content
+{
+    padding: 30px;
+    background-color: white;
+}
+
+.personal-info p {
+    padding-bottom: 10px;
+}
+
+.personal-info input {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 3px 3px 3px 3px;
+}
+
+.question
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.enonc
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #524ff0;
+}
+
+h1
+{
+    color: #524ff0;
+    text-align: center;
+}
+
+a
+{
+    color: #1e75d8;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+@media all and (min-width : 900px)
+{
+    .screenshot
+    {
+        max-width: 750px;
+        box-shadow: 2px 2px 12px black;
+        margin-right:auto;
+        margin-left: auto;
+        display:block;
+        overflow: auto;
+    }
+}
+
+@media all and (max-width: 899px)
+{
+    .screenshot
+    {
+        max-width: 400px;
+        box-shadow: 2px 2px 12px black;
+        margin-right:auto;
+        margin-left: auto;
+        display:block;
+        overflow: auto;
+    }
+}
+
+.zonetxt
+{
+    width: 600px;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 12px;
+}
