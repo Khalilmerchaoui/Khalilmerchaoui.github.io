@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+	<title>Fine Foods Market</title>
+</head>
+
+<body>
+
+	<div  class="sidenav">
+		<a href="#Client" onclick="openInfo(event, 'Client')">Client</a>
+		<a href="#Products" onclick="openInfo(event, 'Products')">Products</a>
+		<a href="#Cart" onclick="openInfo(event, 'Cart')">Cart</a>
+	  </div>
+
+	<div class="main">
+		
+	
+		 <div class="row">
+			<img
+				alt="logo" 
+				src="https://media.istockphoto.com/vectors/	shopping-cart-icon-design-cart-icon-symbol-design-vector-id1138644570?k=6&m=1138644570&s=612x612&w=0&h=YDQ1_rwiomJT9R6aGSX3mus0lXcRxGfrlbzLM6vV9eU=">
+		
+			<h1>Welcome to Fine Foods Market</h1>
+			
+		</div>
+		
+		<!-- Tab content -->
+		<div id="Client" class="tabcontent">
+		  <h3>Client Information</h3>
+		  <p>Tell us a bit about you.</p>
+			Choose a Category:</br></br>
+			<input type="checkbox" value="lactose" onclick="updateOnly('lactose',this.checked)"><label> Lactose Intolerence</label> </br>
+			<input type="checkbox" value="nutAllergy" onclick="updateOnly('nutAllergy',this.checked)"><label> Nut Allergy</label></br>
+			<input type="checkbox" value="vegan" onclick="updateOnly('vegan',this.checked)"><label> Vegan</label></br>
+			<input type="checkbox" value="gluten" onclick="updateOnly('gluten',this.checked)"><label> Gluten Free</label></br>
+			<input type="checkbox" name="organic only" onclick="updateOnly('organic',this.checked)"><label> Organic products only</label>
+			<br/>
+		</div>
+		
+		<div id="Products" class="tabcontent">
+		  <h3>Your targeted products</h3>
+		  <p>We preselected products based on your restrictions.</p>
+			 Choose items to buy:
+		
+			 <div class="row">
+				 order by: <select onchange="populateListProductChoices(this.value)">
+					 <option value="None"></option>
+					 <option value="1"> Price ascending</option>
+					 <option value="0"> Price descending</option>
+				 </select>
+			 </div>
+			 <br/>
+			 <div id="displayProduct"></div>
+			 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+				Add selected items to cart.
+			</button>
+		</div>
+		
+		<div id="Cart" class="tabcontent">
+		  <h3>Cart</h3>
+		  <p>Here is your cart.</p>
+		  <div id="displayCart"></div>
+		</div>
+
+		<footer style="text-align: center;">
+			Site Web conçu par Mackie.
+		</footer>
+	</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+<script type="text/javascript">
+	populateListProductChoices();
+</script>
+</body>
+</html>
