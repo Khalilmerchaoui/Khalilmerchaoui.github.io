@@ -121,11 +121,3 @@ function setOptionsAll(date) {
 
     return [(options.indexOf(day) === -1)];
 }
-
-function getName(id) {
-    return 'Andrew Ho';
-}
-
-function getService(id) {
-    return 'Massage';
-}

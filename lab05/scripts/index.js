@@ -88,7 +88,7 @@ $(document).ready(() => {
         // If all validity checks have passed
         if (true) {
             modal.modal('hide');
-            confirmation.html(`<div class="container-lg"><h3 class="my-4"> Success! </h3> <p>Your appointment is booked on ${datePicker.val()} for a ${getService(service.value)}.</p></div>`);
+            confirmation.html(`<div class="container-lg"><h3 class="my-4"> Success! </h3> <p>Your appointment is booked on ${datePicker.val()}.</p></div>`);
             confirmation.removeAttr('hidden');
 
             setTimeout(() => {
